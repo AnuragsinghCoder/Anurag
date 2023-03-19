@@ -3,9 +3,25 @@
 
   <head>
     <title>
+      E-taught - An educatinal website
     </title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
-    <style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Cinzel&family=Cinzel+Decorative&family=Courgette&family=El+Messiri&family=Lobster&family=Pacifico&family=Playball&family=Style+Script&display=swap" rel="stylesheet">
+ 
+	  <!--font-family: 'Anton', sans-serif;
+font-family: 'Cinzel', serif;
+font-family: 'Courgette', cursive;
+font-family: 'El Messiri', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Playball', cursive;
+font-family: 'Style Script', cursive;
+font-family: 'Cinzel Decorative', cursive;-->
+	  
+	  <style>
   
 body{
     padding: 0px;
@@ -21,10 +37,11 @@ padding-top:1.5vh;
 
 nav{
 width: 100%;
-height: 75px;
-background-color:white;
+height: 90px;
+
 line-height 75px;
-padding-bottom: 20px;
+padding-bottom: 100px;
+padding-top:10px;	
 
 }
 
@@ -34,20 +51,21 @@ nav .logo{
 }
 
 nav .logo p{
-    font-size:34px;
+    font-size:40.8px;
     font-weight: bold;
     letter-spacing: 1.5px;
-    color:#00D100;text-transform: uppercase;
+    color:#16073a;text-transform: uppercase;
     padding-left: 50px;
     margin-top: 10px;
     margin-bottom: 0px;
     align-items: center;
-    
+    font-family: 'Lobster', cursive;
 }
 
 nav ul{
     float:right;
     margin-top: 30px;
+	padding-right: 50px;
 }
 
 nav ul li{
@@ -56,40 +74,50 @@ nav ul li{
 }
 
 nav ul li a{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-decoration: none;
-    color:#00A300;
-    font-size: 18px;
+    color:#16073a;
+	background-color:white;
+    font-size: 21.6px;
     text-transform: uppercase;
-    padding: 0px 20px;
-    border: 2px solid white;
+    padding: 0px 24px;
+   margin: 0px 10px;
     border-radius: 10px;
-    
+	font-family: 'El Messiri', sans-serif;
+    transision-delay: 2s;
 }
 
 nav ul li a:hover{
-    color:white ;
-    background-color:#00A300;
+    background-color: #16073a;
+    color:white;
+	 
 }
 
 nav ul .activ{
-    color:white ;
-    background-color:#00A300;
+     background-color: #16073a;
+   color:white;
 }
 .checkbtn{
-    color:#00A300;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color:#16073a;
+	background-color:white;
     font-size:25px;
     cursor: pointer;
     float:right;
     display: none;
-    border: 2px solid white;
+   
     border-radius: 10px;
 }
 
 .checkbtn:hover{
-    color:white ;
-    background-color:#00A300;}
+      background-color: #16073a;
+color:white;}
 #check{
     display: none;
+}
+		  
+		  
+		
 }
 @media screen and (max-width:990px){
 
@@ -311,8 +339,15 @@ justify-content: center;
   </head>
 
 <body id="body">
-     <header>
-         <nav>
+     <header>    
+     </header>
+     <main> 
+     
+         <div class="test">
+           <div class="roow">
+                 <div class="heroclass" id="heroid">
+			 
+			          <nav>
             <input type="checkbox" id="check">
                 <label for="check" class="checkbtn">
                      <i class="fas fa-bars"></i>
@@ -322,23 +357,21 @@ justify-content: center;
                 <p>E-TAUGHT</p>
             </div>
             <ul>
-                <li><a href="https://anuragsinghcoder.github.io/Anurag/index.html">home</a></li>
-                <li><a href="">classes</a></li>
-                <li><a href="https://anuragsinghcoder.github.io/Anurag/SUBJECTS-6TH.html">subjects</a></li>
+                <li><a href="https://anuragsinghcoder.github.io/Anurag/index.html" >home</a></li>
+                <li onclick="classes()"><a href="https://anuragsinghcoder.github.io/Anurag/index.html">classes</a></li>
+                <li><a href="https://anuragsinghcoder.github.io/Anurag/SUBJECTS-6TH.html" >subjects</a></li>
                 <li><a href="https://anuragsinghcoder.github.io/Anurag/CHAPTER-6TH-MATH.html">chapters</a></li>
                 <li><a href="https://anuragsinghcoder.github.io/Anurag/CHAPTER-6TH-MATH-VIDEOS.html"class="activ">videos</a></li>
                 <li><a href="https://anuragsinghcoder.github.io/Anurag/ABOUTE-US.html">aboute us</a></li>
             </ul>
-         </nav>     
-     </header>
-     <main>
-         <div class="test">
-            <div class="row">
-                 <div class="column" id="banner1">
-                     <img class="imgbanner" src="banner1.jpg"> 
+         </nav>
+			 
+                   <h1>This  Website  has  India's  best  educational  content  with  Top  educators  of  YouTube  INDIA . </h1>
                  </div>
             </div>
-         </div><br><br>
+	</div>
+
+	<br><br>
          <div class="classnavhead"><h1>All VIDEOS</h1></div><br><br>
          <div id="classdiv67" class="classdiv">
             <div id="c6th"class="classes">
