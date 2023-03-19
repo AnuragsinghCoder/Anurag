@@ -3,9 +3,25 @@
 
   <head>
     <title>
+      E-taught - An educatinal website
     </title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
-    <style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Cinzel&family=Cinzel+Decorative&family=Courgette&family=El+Messiri&family=Lobster&family=Pacifico&family=Playball&family=Style+Script&display=swap" rel="stylesheet">
+ 
+	  <!--font-family: 'Anton', sans-serif;
+font-family: 'Cinzel', serif;
+font-family: 'Courgette', cursive;
+font-family: 'El Messiri', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Playball', cursive;
+font-family: 'Style Script', cursive;
+font-family: 'Cinzel Decorative', cursive;-->
+	  
+	  <style>
   
 body{
     padding: 0px;
@@ -13,6 +29,7 @@ body{
     box-sizing: border-box;
   
 }
+		  
 p{
 font-size:1.6vh;
 margin-top:0vh;
@@ -21,10 +38,11 @@ padding-top:1.5vh;
 
 nav{
 width: 100%;
-height: 75px;
-background-color:white;
+height: 90px;
+
 line-height 75px;
-padding-bottom: 20px;
+padding-bottom: 100px;
+padding-top:10px;	
 
 }
 
@@ -34,20 +52,21 @@ nav .logo{
 }
 
 nav .logo p{
-    font-size:34px;
+    font-size:40.8px;
     font-weight: bold;
     letter-spacing: 1.5px;
-    color:#00D100;text-transform: uppercase;
+    color:#16073a;text-transform: uppercase;
     padding-left: 50px;
     margin-top: 10px;
     margin-bottom: 0px;
     align-items: center;
-    
+    font-family: 'Lobster', cursive;
 }
 
 nav ul{
     float:right;
     margin-top: 30px;
+	padding-right: 50px;
 }
 
 nav ul li{
@@ -56,41 +75,65 @@ nav ul li{
 }
 
 nav ul li a{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-decoration: none;
-    color:#00A300;
-    font-size: 18px;
+    color:#16073a;
+	background-color:white;
+    font-size: 21.6px;
     text-transform: uppercase;
-    padding: 0px 20px;
-    border: 2px solid white;
+    padding: 0px 24px;
+   margin: 0px 10px;
     border-radius: 10px;
-    
+	font-family: 'El Messiri', sans-serif;
+    transision-delay: 2s;
 }
 
 nav ul li a:hover{
-    color:white ;
-    background-color:#00A300;
+    background-color: #16073a;
+    color:white;
+	 
 }
 
 nav ul .activ{
-    color:white ;
-    background-color:#00A300;
+     background-color: #16073a;
+   color:white;
 }
 .checkbtn{
-    color:#00A300;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color:#16073a;
+	background-color:white;
     font-size:25px;
     cursor: pointer;
     float:right;
     display: none;
-    border: 2px solid white;
+   
     border-radius: 10px;
 }
 
 .checkbtn:hover{
-    color:white ;
-    background-color:#00A300;}
+      background-color: #16073a;
+color:white;}
 #check{
     display: none;
 }
+		  
+		  
+		  
+		  
+		  
+		  
+
+.classheading{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+font-size:8vh ;
+font-family: 'Cinzel Decorative', cursive;
+justify-content: center;
+margin-bottom: 0;
+border-radius: 0vh 5vh 0vh 5vh;
+
+}
+		  
+		  
 @media screen and (max-width:990px){
 
     nav{
@@ -103,6 +146,7 @@ nav ul .activ{
         padding-left: 30px;
         padding-right: 30px;
         margin-top: 30px;
+	    margin-right:30px;
        align-items: center;
     }
     nav .logo p{
@@ -112,10 +156,10 @@ nav ul .activ{
     nav ul{
         width: 100%;
         height: 100vh;
-        background-color:white ;
-        color:#00A300;
+        background-color: white;
+        color:#16073a ;
         position: fixed;
-        top: 95px;
+        top: 125px;
         left:-120%;
         text-align: center;
         transition: 0.4s ease;
@@ -133,13 +177,26 @@ nav ul .activ{
     #check:checked ~ ul{
         left:0;
     }
+	#heroid h1{
+	padding:100px;
+		font-size:4em;
+	    }
     
+	.classheading{
+		font-size:4vh ;}
 }
 
+@media screen and (max-width:980px){
+	#heroid h1{
+	padding:100px;
+		font-size:4em;
+	    }
+    
+	.classheading{
+		font-size:4vh ;}
+}
 
-
-
-
+		  
 
 
 .imgbanner{ 
@@ -147,67 +204,66 @@ nav ul .activ{
     
 width:100%;
 height:150%;
-
 display:flex;
-
-
 
 }
 
 .test{
-    background-image:repeating-linear-gradient(white,#00A300);
-    padding-bottom: 20px;
+    background-image:repeating-linear-gradient(white, #16073a);
+    padding-bottom: 0px;
+	margin:0px;
 }
 
 .classnavhead{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: flex;
     color:white;
-    background-color: #00A300;
+    background-color:  #16073a;
     justify-content: center;
+	font-family: 'Cinzel Decorative', cursive;
    
 }
 
 #classdiv67{
     padding-top: 10px;
-    background-image:repeating-linear-gradient(#00A300,white);
+    background-image:repeating-linear-gradient( #16073a,white);
 }
 
-.classes{  
-color:#00A300;
+.classes{ 
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+color: #16073a;
 background-color:white;
-border:5px solid rgb(61, 58, 58);
+
 text-align: center;
 border-radius: 0vh 5vh 0vh 5vh ;
-margin:1vh;
+margin: 2vh;
 padding: 0vh;
-width: 96.5%;
-justify-content: center;
+width: 50%;
 
 }
 .classdiv :hover{
-background-color:#00A300;
+background-color: #16073a;
 color:white; 
 }
 
 .classp{
+font-family: 'Playball', cursive;
 font-size: 2.5vh;
 margin-top: 0vh;
+	border-radius: 0px 35px 0px 35px;
 }
 
-.classheading{
-font-size:7vh ;
-justify-content: center;
-margin-bottom: 0;
-border-radius: 0px 35px 0px 35px;
-border: 2px solid ;
-}
 
 
 .classdiv{
-display: block;
+display: flex;
 }
 
+#c12th{ 
+width: 100%;
+}
 #footercontent{
+	font-family: 'Cinzel', serif;
   color: white;
   background-color:rgb(61, 58, 58);
   height: 4
@@ -217,10 +273,12 @@ display: block;
 }
 
 #footerheight{
+	font-family: 'Cinzel Decorative', cursive;
     font-size: 3vh;
 }
 
 .divheading{
+	
 display:flex;
 justify-content: center;
 }
@@ -296,6 +354,25 @@ justify-content: center;
     color:white;
 }
 
+#heroid
+	    {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	    color:white;
+	    font-family: 'Anton', sans-serif;
+	    }
+#heroid h1{
+	    text-shadow: 1px 1px 2px white, 0 0 1em #16073a, 0 0 0.2em #16073a;
+	font-size:3em;
+	height:3.5em;
+	font-family: 'Cinzel Decorative', cursive;
+	padding:150px;
+	padding-bottom:250px;
+	margin:0px;
+	    }
+	    .roow{
+	         background-image:repeating-linear-gradient(white, #16073a);;
+    background-repeat: no-repeat;
+	    }
+
 
 
 
@@ -312,8 +389,15 @@ justify-content: center;
   </head>
 
 <body id="body">
-     <header>
-         <nav>
+    <header>    
+     </header>
+     <main> 
+     
+         <div class="test">
+           <div class="roow">
+                 <div class="heroclass" id="heroid">
+			 
+			          <nav>
             <input type="checkbox" id="check">
                 <label for="check" class="checkbtn">
                      <i class="fas fa-bars"></i>
@@ -323,23 +407,21 @@ justify-content: center;
                 <p>E-TAUGHT</p>
             </div>
             <ul>
-                <li><a href="https://anuragsinghcoder.github.io/Anurag/index.html">home</a></li>
-                <li><a href="">classes</a></li>
+                <li><a href="https://anuragsinghcoder.github.io/Anurag/index.html" >home</a></li>
+                <li onclick="classes()"><a href="https://anuragsinghcoder.github.io/Anurag/index.html">classes</a></li>
                 <li><a href="https://anuragsinghcoder.github.io/Anurag/SUBJECTS-6TH.html" >subjects</a></li>
-                <li><a href="https://anuragsinghcoder.github.io/Anurag/CHAPTER-6TH-MATH.html"class="activ">chapters</a></li>
+                <li><a href="https://anuragsinghcoder.github.io/Anurag/CHAPTER-6TH-MATH.html" class="activ">chapters</a></li>
                 <li><a href="https://anuragsinghcoder.github.io/Anurag/CHAPTER-6TH-MATH-VIDEOS.html">videos</a></li>
                 <li><a href="https://anuragsinghcoder.github.io/Anurag/ABOUTE-US.html">aboute us</a></li>
             </ul>
-         </nav>     
-     </header>
-     <main>
-         <div class="test">
-            <div class="row">
-                 <div class="column" id="banner1">
-                     <img class="imgbanner" src="banner1.jpg"> 
+         </nav>
+			 
+                   <h1>This  Website  has  India's  best  educational  content  with  Top  educators  of  YouTube  INDIA . </h1>
                  </div>
             </div>
-         </div><br><br>
+	</div>
+
+	<br><br>
          <div class="classnavhead"><h1>All CHAPTERS</h1></div><br><br>
          <div id="classdiv67" class="classdiv">
             <div  onclick="chapter1()" id="c6th"class="classes">
